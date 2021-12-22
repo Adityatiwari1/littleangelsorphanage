@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+nav{
+    background: #1b1b1b;
+}
+
+nav:after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+nav ul{
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+     position: relative; 
+     margin-top: 5px;
+}
+
+nav ul li{
+    display: inline-block;
+    background: #1b1b1b;
+    /* float: left; */
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 25px;
+    padding: 8px 15px;
+}
+
+nav ul li a:hover{
+    /* color: rgb(37, 165, 250); */
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0 0 5px #23c7f0,
+                0 0 5px #23c7f0;
+}
+
+  nav ul ul li a:hover{
+    box-shadow: none;
+    color: rgb(34, 171, 235);
+} 
+
+nav ul ul{
+    position: absolute;
+    top: 90px;    
+    border-top: 3px solid #23c7f0;        
+    opacity: 0;
+    visibility: hidden;
+    transition: top .3s;
+}
+
+nav ul ul ul{
+    border-top: none;
+}
+
+nav ul li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+}
+
+nav ul ul li{
+    position: relative;
+    margin-left: -19px;
+    width: 270px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+nav ul ul li a{
+    line-height: 50px;
+}
+
+nav ul ul ul li{
+    position: relative;
+    top: -70px;
+    left: 150px;
+}
+
+nav .main{
+    float: left;
+    color: rgb(19, 186, 236);
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 70px;
+    padding-left: 75px;
+    margin-top: 5px;
+}
+
+
+
+
+
+
+/* blur background */
+
+body, html {
+    height: 100%;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .bg-image {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCsn04G9wtPYaOixapKXF9OSM4-uIXFgeWxg&usqp=CAU");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  
+  /* Position text in the middle of the page/image */
+  .bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: relative;
+    left: 10%;
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    
+  }
+
+  .bg-text h1{
+      font-size: 60px;
+  }
+
+  @media screen and (max-width: 1500px) {
+      .bg-text{
+          font-size: 16px;
+      }
+      .bg-text h1{
+          font-size: 50px;
+      }
+  }
+
+  @media screen and (max-width: 1486px) {
+    nav .main{
+        padding-left: 50px;
+        font-size: 28px;
+    }
+    nav ul li a{
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 1406px) {
+    nav .main{
+        font-size: 26px;
+    }
+    nav ul li a{
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    nav .main{
+        font-size: 25px;
+    }
+    nav ul li a{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 1308px) {
+    nav .main{
+        font-size: 22px;
+    }
+    nav ul li a{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 1268px) {
+    nav .main{
+        font-size: 21px;
+    }
+    nav ul li a{
+        font-size: 21px;
+    }
+}
+
+  @media screen and (max-width: 1242px) {
+    .bg-text{
+        font-size: 16px;
+    }
+    .bg-text h1{
+        font-size: 46px;
+    }
+}
+
+@media screen and (max-width: 1225px) {
+    nav .main{
+        font-size: 20px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1184px) {
+    nav .main{
+        font-size: 19px;
+    }
+    nav ul li a{
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 1141px) {
+    nav .main{
+        font-size: 18px;
+        padding-left: 40px;
+    }
+    nav ul li a{
+        font-size: 18px;
+    }
+    nav ul{
+        margin-right: 25px;
+    }
+}
+
+@media screen and (max-width: 1074px) {
+    .bg-text{
+        font-size: 15px;
+    }
+    .bg-text h1{
+        font-size: 42px;
+    }
+    nav ul{
+        margin-right: 18px;
+    }
+    nav .main{
+        padding-left: 30px;
+    }
+}
+
+
+
+  /* footer */
+
+
+  
+

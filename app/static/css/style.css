@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+ }
+ 
+ 
+ .bg1{
+     background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://i.pinimg.com/originals/89/06/b6/8906b6dcaaa78255d0ad67507487cae3.jpg')no-repeat center center fixed;
+     background-size: cover;
+     height: 550px;
+     width: 100%;
+     /* background-image: url("https://www.eitfood.eu/media/hero/image.jpg"); */
+     /* background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("https://wallpapermemory.com/uploads/361/still-life-food-background-1080p-436567.jpg"); */
+     background-attachment: fixed;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center ;	
+     display: table;
+     max-width: 100%;
+     height: auto;
+     max-height: 600px;
+     min-width: 77px;
+     margin-right: 0px;
+     min-height: 600px;
+ } 
+ 
+ 
+ .contact-us{
+     display: table-cell;
+     vertical-align: text-top;
+     padding-top: 50px;
+ 
+ }
+ 
+ 
+ .contact-us h1 {
+     font-family: Cormorant Garamond; 
+     font-size: 60px;
+     color: rgb(248, 242, 242);
+     text-align: center;
+     /* font-style: italic; */
+     /* font-weight: bold; */
+     line-height: 40px;
+     /* text-shadow: 2px 2px 8px #111; */
+     font-weight: 900; 
+     display: block;
+     width: auto;
+     margin: 0 auto;
+     text-transform: uppercase;
+     max-width: 600px;
+     
+ }
+ 
+ 
+ /* body{
+     font-size: 14px;
+     font-family: 'Poppins', sans-serif;
+ } */
+ 
+ 
+  .container{
+      width: 80%;
+      margin: 50px auto;
+      font-size: 14px;
+     font-family: 'Poppins', sans-serif;
+  }
+ 
+ 
+  .contact-box{
+      background: #fff;
+      display: flex;
+  }
+ 
+ 
+  .contact-left{
+      flex-basis: 60%;
+      padding: 40px 60px;
+  }
+ 
+ 
+  .contact-right{
+      flex-basis: 40%;
+      padding: 40px;
+      background: #48b4fc;
+      color: #fff;
+  }
+ 
+ 
+  h1{
+      margin-bottom: 10px;
+  }
+  .container p{
+      margin-bottom: 40px;
+  }
+ 
+ 
+  .input-row{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+  }
+ 
+ 
+  .input-row .input-group{
+      flex-basis: 45%;
+  }
+ 
+ 
+  input{
+      width:100%;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      outline: none;
+      padding-bottom: 5px;
+  }
+ 
+  
+  textarea{
+      width: 100%;
+      border: 1px solid #ccc;
+      outline: none;
+      padding: 10px;
+      box-sizing: border-box;
+  }
+ 
+ 
+  label{
+      margin-bottom: 6px;
+      display: block;
+      color: #050505;
+  }
+ 
+ 
+  button{
+      background: #48b4fc;
+      width: 100px;
+      border: none;
+      outline: none;
+      color: #fff;
+      height: 35px;
+      border-radius: 30px;
+      margin-top: 20px;
+      /* box-shadow: 0px 5px 15px 0px rgba(28,0,181,0.3); */
+  }
+ 
+ 
+  /* button  :visited{
+      color: white;
+  } */
+ 
+ 
+  .contact-left h3{
+      color: #000000;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+ 
+ 
+  .contact-right h3{
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+ 
+ 
+  tr td first-child{
+      padding-right: 20px;
+      
+  }
+ 
+ 
+ 
+  tr td{
+      padding-top: 20px;
+  }
+  
+  
+  
+ 
+
+

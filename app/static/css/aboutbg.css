@@ -1,0 +1,71 @@
+
+/* background */
+
+.background{
+    height: 650px;
+	width: 100%;
+	/* background-image: url("https://www.eitfood.eu/media/hero/image.jpg"); */
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url("https://indianorphanage.com/io/wp-content/uploads/2020/05/indian-orphanage-children-5757.jpg");
+    background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center ;	
+	display: table; 
+    max-width: 100%;
+    height: auto;
+    max-height: 600px;
+    min-width: 77px;
+    min-height: 500px;
+    
+}
+
+.pwf{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: 0 0;
+    background-image: initial;
+    background-position-x: 0px;
+    background-position-y: 0px;
+    background-size: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+ }
+
+
+ .heading{
+    font-size: 2.92326431181486vh;
+    line-height: 2.92326431181486vh;
+    color: white;
+    font-weight: bold;
+    font-style: normal;
+    font-family: 'Baloo Bhai 2', cursive;
+ }
+
+
+
+ .heading h1{
+     margin-bottom: 0.5em;
+     text-align: center;
+     margin-top: 13rem;
+     font-family: 'Baloo Bhai 2', cursive;
+     font-size: 3rem;
+     
+    
+ }
+
+ 
+ 
+
+@media only screen and (max-width: 330px) and (min-width:220px) {
+
+    .heading h1{
+        margin-top: 3rem;
+    }
+
+}

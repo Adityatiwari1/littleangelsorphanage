@@ -1,0 +1,273 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500&display=swap');
+  *,
+  *::after,
+  *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+  
+  html {
+    font-size: 48.5%;
+  }
+  
+  .gallery {
+    font-family: 'Baloo Bhai 2', cursive;
+    font-weight: 400;
+    line-height: 1.7;
+    padding: 3rem;
+    box-sizing: border-box;
+  }
+  
+  .grids {
+    max-width: 136rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+  }
+  
+  .card-one {
+    grid-column: 1/4;
+  }
+  
+  .card-two {
+    grid-column: 1/4;
+  }
+  
+  .card-three {
+    grid-column: 1/4;
+  }
+  
+  .card-four {
+    grid-column: 1/4;
+  }
+  
+  .card-five {
+    grid-column: 1/4;
+  }
+  
+  .card-six {
+    grid-column: 1/4;
+  }
+  
+  .card-seven {
+    grid-column: 1/4;
+  }
+  
+  .card {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 25rem;
+    width: 100%;
+    transition: all ease-in-out 300ms;
+    cursor: pointer;
+    font-family: 'Baloo Bhai 2', cursive;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card:active {
+    transform: translateY(-1px);
+  }
+  
+  .card__side {
+    transition: all 0.8s ease;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Baloo Bhai 2', cursive;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25rem;
+    width: 100%;
+    backface-visibility: hidden;
+    box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+  }
+  
+  .card__side--front {
+    background-color: #2196f3;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .card__side--back {
+    background-color: #303f9f;
+    transform: rotateY(180deg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .showGreen {
+    transform: rotateY(-180deg);
+  }
+  
+  .showRed {
+    transform: rotateY(0);
+  }
+  
+  .text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+  }
+  
+  .text-box-top {
+    font-size: 2.2rem;
+    text-shadow: 2px 2px 10px #0000006c;
+    font-weight: 400;
+  }
+  
+  .text-box-middle {
+    font-size: 5.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 10px #0000006c;
+  }
+  
+  .text-box-lower {
+    font-size: 2rem;
+    text-shadow: 2px 2px 10px #0000006c;
+    font-weight: 400;
+  }
+  
+  .heading {
+    transition: all 0.6s linear;
+  }
+  
+  .hide {
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+  .show {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  #front-1 {
+    background-image: 
+      url(https://levlalev.com/wp-content/uploads/2017/05/orphan-girl-crying.jpg);
+  }
+  
+  #front-2 {
+    background-image: 
+      url(https://www.heavensfamily.org/wp-content/uploads/2016/05/girls-orphanage-a.jpg);
+  }
+  
+  #front-3 {
+    background-image: 
+      url(https://newdaycharity.files.wordpress.com/2009/06/sany0100.jpg);
+  }
+  
+  #front-4 {
+    background-image: 
+      url(https://img.ulule.com/display/0fa28e3a5a45f2ab661e7ee3338c54da6eca074a/thumbnail/640x360/presales/8/7/5/13578/photo1.jpg);
+  }
+  
+  #front-5 {
+    background-image: 
+      url(https://d2g8igdw686xgo.cloudfront.net/33682690_1543924007170711_r.jpeg);
+  }
+  
+  #front-6 {
+    background-image: 
+      url(https://www.homeofhopeindia.org/wp-content/uploads/2017/07/support_orphan.jpg);
+  }
+  
+  #front-7 {
+    background-image: 
+      url(https://inspiremykids.com/wp-content/uploads/2011/02/nehalg-1-1200x865.jpg);
+  }
+  
+  /* Back */
+  
+  #back-1 {
+    background-image: 
+      url(https://i.pinimg.com/originals/98/c6/9a/98c69a66353a76217b371490bd085528.jpg);
+  }
+  
+  #back-2 {
+    background-image: 
+      url(https://i.pinimg.com/originals/86/94/91/869491ea21ad63ac2d9277fadd059de3.jpg);
+  }
+  
+  #back-3 {
+    background-image: 
+      url(https://indianorphanage.com/io/wp-content/uploads/2020/05/indian-orphanage-children-9829.jpg);
+  }
+  
+  #back-4 {
+    background-image: 
+      url(https://inspiremykids.com/wp-content/uploads/2011/02/nehalg-1-1200x865.jpg);
+  }
+  
+  #back-5 {
+    background-image: 
+      url(https://c3.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,w_695,g_auto,q_auto,dpr_2.6,f_auto,h_460/mujxrm1ifavpcui7lzkw);
+  }
+  
+  #back-6 {
+    background-image: 
+      url(https://190xog308tca51yblb2p8xei-wpengine.netdna-ssl.com/wp-content/uploads/2020/03/201503Gokul-Stairs-64-Lynn-Dobson.jpg);
+  }
+  
+  #back-7 {
+    background-image: 
+      url(https://images.squarespace-cdn.com/content/v1/57ee6606b3db2b9bde3b7445/1543788579923-2TFV7M0HQSWWCSCUFK61/Miracle4.jpg?format=1000w);
+  }
+  
+  @media screen and (min-width: 1024px) {
+    html {
+      font-size: 62.5%;
+    }
+  
+    .grids {
+      max-width: 127rem;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 3rem;
+      grid-row-gap: 3rem;
+    }
+  
+    .card-one {
+      grid-column: 1/3;
+    }
+  
+    .card-two {
+      grid-column: 3/4;
+    }
+  
+    .card-three {
+      grid-column: 1/2;
+    }
+  
+    .card-four {
+      grid-column: 2/2;
+    }
+  
+    .card-five {
+      grid-column: 3/4;
+    }
+  
+    .card-six {
+      grid-column: 1/2;
+    }
+  
+    .card-seven {
+      grid-column: 2/4;
+    }
+  }
+  
