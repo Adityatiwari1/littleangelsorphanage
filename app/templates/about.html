@@ -1,0 +1,195 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!---bootstrap css of navbar-->
+
+   
+
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/Aboutus.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/aboutfoot.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/aboutbg.css' %}" />
+
+
+
+    <script src="https://kit.fontawesome.com/9c720a986d.js" crossorigin="anonymous"></script>
+
+
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css' />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+
+
+</head>
+
+<body>
+
+    
+    <nav>
+        <div class="main">LITTLE ANGELS ORPHANAGE</div>
+        <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li>
+                <a href="{% url 'about' %}">Who We Are</a>
+                <!-- <ul>
+                    <li><a href="#">Our Work</a></li>
+                    <li><a href="#">Our Beliefs</a></li>
+                     <li><a href="#">Icons</a></li> 
+                </ul> -->
+            </li>
+            <li><a href="{% url 'work' %}">How We Work</a></li>
+            <li>
+                <a href="#">Memories</a>
+                <ul>
+                    <li><a href="{% url 'video' %}">Videos</a></li>
+                    <li><a href="{% url 'gallery' %}">Gallery</a></li>
+                    <li><a href="{% url 'stories' %}">Our Happy Story</a></li>
+                  
+                </ul>
+            </li>
+            <li>
+                <a href="#">Connect with Us</a>
+                <ul>
+                    <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                    <li><a href="{% url 'feedback' %}">Feedback</a></li>
+                    <li><a href="{% url 'donation' %}">Donation</a></li>
+                </ul>
+            </li>
+            
+        </ul>
+    </nav>
+
+
+
+    <!-- header testimonials -->
+
+    <div class="background">
+
+        <div class="ant-col-xs-24 ant-col-sm-10 ant-col-sm-offset-0 ant-col-lg-12">
+
+            <div class="pwf">
+
+                <div class="heading">
+
+                    <h1>Lets Know more about our Family</h1>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div><br><br>
+
+
+        <!-- about -->
+
+
+
+
+
+        <div class="about">
+
+            <div class="inner-section">
+
+                <h4>A Family for Every Girl in our Lifetime</h4>
+
+                <p class="text_about">
+                    Our country India very proudly claims to be living in the motherland and worship various woman deities and goddesses but the dire concern of this is women sadly do not get the same respect and equal status. That why the little angels is A family for every girl who got abandoned by her family got her new family in the form of us.
+                    tle angels a family to more than 60 orphaned girls provide them a respectable.  
+                    By loving those girls and accepting them as they are, we aims to raise its foster kids to become independent womens who will contribute to society. 
+                    Orphans particularly girls, need a safe place to grow. 
+                </p>
+
+                <h4>Why most of the girls got abandoned!</h4>
+
+                <p class="text_about_1">
+                   "The main problem that lies in society is the rules set for girls, about conduct and behaviour. Some of them are problematic as a girls cannot step out at night without a man, this subconsciously is only promoting the idea that girls are unsafe, and due to this in many homes in India, 
+                   the families treat the girls differently than boys and only this that lead to the hunger of wanting a boy over girls."<br><br><br>
+
+                   "Due to the rape cases most of the people think that if they will a have a girl child and by chance something wrong happened with her,
+                    their position and status will not remain same and that’s also the main reason for the abandoning the girls."<br><br><br>
+
+                    "There are also more problems that still our country is unable to overcome that is sexual harassment, subjection to child marriage, women become victims of marital rape and when a woman speaks up against any harassment as an act of revenge the harasser throws acid on her. Young girls go missing due to child trafficking and are forced to grow up in a harsher environment that can even be life-threatening, 
+                    not getting the equal opportunity of education and even if they get basic education then they are not allowed to work and get independent."
+
+
+                </p>
+
+
+            </div>
+
+
+
+        </div><br><br>
+
+        <div class="hero-im">
+            <p class="container-1">Caring for these girls and nurturing them with the basics like food and clean clothes, and access to education, increases the likelihood of them becoming positive members of their communities is the main motive of our society.</p>
+    
+    
+        </div>
+
+        <!-- <div class="arrow">
+            <a href="#" title="back to top"><span class="fas fa-angle-up"></span></a>
+        </div> -->
+
+    
+       <!-- footer -->
+    <footer>
+		<div class="foot-container">
+			<div class="foot-row">
+				<div class="footer-col">
+					<h4>Organisation</h4>
+			<ul>
+						<li><a href="{% url 'about' %}">Who we are</a></li>
+						<li><a href="{% url 'work' %}">How we work</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Memories</h4>
+					<ul>
+                        <li><a href="{% url 'video' %}">Videos</a></li>
+						<li><a href="{% url 'gallery' %}">Gallery</a></li>
+						<li><a href="{% url 'stories' %}">Our Happy Story</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Connect with Us</h4>
+					<ul>
+						<li><a href="{% url 'contact' %}">Contact Us</a></li>
+						<li><a href="{% url 'feedback' %}">Feedback</a></li>
+                        <li><a href="{% url 'donation' %}">Donation</a></li>
+						
+					</ul>
+				</div> 
+			</div>
+		</div>
+	</footer>
+
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+</body>
+</html>

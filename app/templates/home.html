@@ -1,0 +1,316 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Angels</title>
+    
+    <link rel="stylesheet" href="{% static 'css/gallery2.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/content.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/homefoot.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/partner.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/homebg.css' %}" />
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>-->
+    <!--  -->
+
+</head>
+
+<body>
+
+    <nav>
+        <div class="main">LITTLE ANGELS ORPHANAGE</div>
+        <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li>
+                <a href="{% url 'about' %}">Who We Are</a>
+            </li>
+            <li><a href="{% url 'work' %}">How We Work</a></li>
+            <li>
+                <a href="#">Memories</a>
+                <ul>
+                    <li><a href="{% url 'video' %}">Videos</a></li>
+                    <li><a href="{% url 'gallery' %}">Gallery</a></li>
+                    <li><a href="{% url 'stories' %}">Our Happy Story</a></li>
+                  
+                </ul>
+            </li>
+            <li>
+                <a href="#">Connect with Us</a>
+                <ul>
+                    <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                    <li><a href="{% url 'feedback' %}">Feedback</a></li>
+                    <li><a href="{% url 'donation' %}">Donation</a></li>
+                </ul>
+            </li>
+            
+        </ul>
+    </nav>
+
+    <!-- background -->
+
+    <div class="background">
+
+        <div class="ant-col-xs-24 ant-col-sm-10 ant-col-sm-offset-0 ant-col-lg-12">
+
+            <div class="pwf">
+
+                <div class="heading">
+
+                    <h1>LITTLE ANGELS ORPHANAGE </h1>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="heading-2">
+
+        <h2>We warmly welcome you to the Little Angels family. Little angels is a home for about 60 abandoned daughters
+            from the age
+            of just eight months to 21-year-old girls, helping them to lead a respectful and happy life. We do not aim
+            to just take
+            care of the basic amenities, but to provide them with every facility to help them figure out what actually
+            makes them happy.
+        </h2>
+
+    </div>
+
+
+    <div class="bg-image">
+        <div class="bg-text" style="top: 30px;">
+  <h1>“Let us always meet each other with a smile, for the smile is the beginning of love.”</h1>
+  <p>Being a girl is the most beautiful thing a god can gift. But some of the people disrespect that gift and loose the opportunity to become the happiest person on the earth.  Dalai Lama  said that “The purpose of our lives is to be happy.” The one source of happiness is being the girls. We should inspire every girl to break the stereotypes, 
+      live their lives on their own terms and condition by being independent.</p><br><br>
+      According to the research early a quarter of a million girls under the age of five die annually in India because of neglect related to gender-based discrimination. At an estimated 239,000 deaths per year, that amounts to about 2.4 million over a decade, not including pre-natal deaths.The preference for a son is widespread in India, sometimes leading to pre-natal termination and, as the new research suggests, post-natal neglect.
+       “Gender-based discrimination towards girls doesn’t simply prevent them from being born, it may also precipitate the death of those who are born,”
+</div><br><br><br>
+    </div>
+
+
+
+
+<!-- become a volunteer -->
+
+
+<div class="partner1">
+    <div class="containerp">
+      <div class="cardp">
+        <div class="contentp">
+          <h2> Become a Volunteer</h2>
+          <p>"If you become a helper of hearts,</p>
+          <p>springs of wisdom will flow from your heart."</p>
+          <!-- <a href="delivery.html">
+          <br><button class="buttonp">Start Earning</button></br>
+		  </a> -->
+          <div class="follow">
+            <a href="#"><button class="submit_partner">Join Us</button></a>
+          </div>
+        </div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2AP6MR535EQl0g0UG-yfBdu9zJXpKuRwoNhs02CT-f_UyrSQNEpDZZ2bqkf0MYsoWsgM&usqp=CAU">
+      </div>
+      <div class="cardp">
+        <div class="contentp">
+          <h2>Give your Feedback</h2>
+          <!-- <p>Grow your business by reaching </p>
+          <p>new customers.</p> -->
+          <!-- <a href="partnerwithus.html">
+          <br><button class="buttonp">Partner with us</button></br>
+		  </a> -->
+          <div class="follow">
+            <a href="{% url 'feedback' %}"><button class="submit_partner">Feedback</button></a>
+          </div>
+        </div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl-bi8h-tx_P4O9Zb6g1-_9p2ZEGZI9zuZiDA10xo4vWTuo4aMetT0NvpLQwFyFHtyLUg&usqp=CAU">
+      </div>
+    </div>
+  </div><br><br><br>
+
+
+<!-- more content -->
+
+
+<div class="about">
+
+    <div class="inner-section">
+
+        <h4>Our organization </h4>
+
+        <p class="text_about">
+            In the heart of every child is a hunger for home. Not just for food and a place to sleep, but for safety and community. 
+            Because of gender biased society where boys are still in the 21st century are preferred over girls, alot of girls faces problems. 
+            The Times of India reports that nine out of 10 abandoned children are girls. In some parts of India, parents view girls as burdens because, for one, 
+            their dowries for marriage are costly.Thats why our organisation has taken this initiative to provide all the types of facility which a child deserve to a
+            ll the girls who have been abondened by their families and stand up for the helpless girls and assist them in living a respectable life.. 
+
+
+        </p>
+
+        <h4>Come help us</h4>
+
+        <p class="text_about_1">
+            When asked about what steps to take to realize people that girls are equally important as boys our organisation on the regular basis do campaign by  
+            boosting social welfare programs as well as investing in public education specially in rural areas in the villages. Those all the people who wants to contribute 
+            to our society can contact us to the number or 
+            through by vising us ,we welcome all the people by our open heart for a a good cause.
+
+        </p>
+
+
+    </div>
+
+
+</div>
+
+
+
+
+
+    <!-- gallery starts -->
+
+    <div class="gallery">
+        <div class="grids">
+            <div class="card-one">
+                <div class="card">
+                    <div class="card__side card__side--front" id="front-1">
+
+                    </div>
+                    <div class="card__side card__side--back" id="back-1">
+
+                    </div>
+                </div>
+            </div>
+            <div class="card-two">
+                <div class="card">
+                    <div class="card__side card__side--front" id="front-2">
+
+                    </div>
+                    <div class="card__side card__side--back" id="back-2">
+
+                    </div>
+                </div>
+            </div>
+            <div class="card-three">
+                <div class="card">
+                    <div class="card__side card__side--front" id="front-3">
+
+                    </div>
+                    <div class="card__side card__side--back" id="back-3">
+
+                    </div>
+                </div>
+            </div>
+            <div class="card-four">
+                <div class="card">
+                    <div class="card__side card__side--front" id="front-4">
+
+                    </div>
+                    <div class="card__side card__side--back" id="back-4">
+
+                    </div>
+                </div>
+            </div>
+            <div class="card-five">
+                <div class="card">
+                    <div class="card__side card__side--front" id="front-5">
+
+                    </div>
+                    <div class="card__side card__side--back" id="back-5">
+
+                    </div>
+                </div>
+            </div>
+            <div class="card-six">
+                <div class="card">
+                    <div class="card__side card__side--front" id="front-6">
+
+                    </div>
+                    <div class="card__side card__side--back" id="back-6">
+
+                    </div>
+                </div>
+            </div>
+            <div class="card-seven">
+                <div class="card">
+                    <div class="card__side card__side--front" id="front-7">
+                    </div>
+                    <div class="card__side card__side--back" id="back-7">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- footer -->
+    <footer>
+		<div class="foot-container">
+			<div class="foot-row">
+				<div class="footer-col">
+					<h4>Organisation</h4>
+					<ul>
+						<li><a href="{% url 'about' %}">Who we are</a></li>
+						<li><a href="{% url 'work' %}">How we work</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Memories</h4>
+					<ul>
+                        <li><a href="{% url 'video' %}">Videos</a></li>
+						<li><a href="{% url 'gallery' %}">Gallery</a></li>
+						<li><a href="{% url 'stories' %}">Our Happy Story</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Connect with Us</h4>
+					<ul>
+						<li><a href="{% url 'contact' %}">Contact Us</a></li>
+						<li><a href="{% url 'feedback' %}">Feedback</a></li>
+                        <li><a href="{% url 'donation' %}">Donation</a></li>
+						
+					</ul>
+				</div> 
+				<!-- <div class="footer-col">
+					<h4>follow us</h4>
+					<div class="social-links">
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-linkedin-in"></i></a>
+					</div> <br>
+					<h4>Subscribe For More</h4>
+					<div class="follow">
+						<button class="submit1">Subscribe</button>
+					</div>
+				</div> -->
+			</div>
+		</div>
+	</footer>
+</body>
+
+
+<script src="{% static '/js/gallery2.js' %}" ></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/9c720a986d.js" crossorigin="anonymous"></script>
+
+</html>

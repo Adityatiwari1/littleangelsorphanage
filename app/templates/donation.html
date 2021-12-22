@@ -1,0 +1,151 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Angels</title>
+    
+    <link rel="stylesheet" href="{% static 'css/donation.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}" />
+    
+    <link rel="stylesheet" href="{% static 'css/homefoot.css' %}" />
+  
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>-->
+    <!--  -->
+
+</head>
+
+<body>
+
+    <nav>
+        <div class="main">LITTLE ANGELS ORPHANAGE</div>
+        <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li>
+                <a href="{% url 'about' %}">Who We Are</a>
+                <!-- <ul>
+                    <li><a href="#">Our Work</a></li>
+                    <li><a href="#">Our Beliefs</a></li>
+                     <li><a href="#">Icons</a></li> 
+                </ul> -->
+            </li>
+            <li><a href="{% url 'work' %}">How We Work</a></li>
+            <li>
+                <a href="#">Memories</a>
+                <ul>
+                    <li><a href="{% url 'video' %}">Video's</a></li>
+                    <li><a href="{% url 'gallery' %}">Gallery</a></li>
+                    <li><a href="{% url 'stories' %}">Our Happy Story</a></li>
+                  
+                </ul>
+            </li>
+            <li>
+                <a href="#">Connect with Us</a>
+                <ul>
+                    <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                    <li><a href="{% url 'feedback' %}">Feedback</a></li>
+                    <li><a href="{% url 'donation' %}">Donation</a></li>
+                </ul>
+            </li>
+            
+        </ul>
+    </nav>
+
+    <!--Donation-->
+    <div class="thank">
+            <div class="col-md-18 pay">
+            <h1>Donate</h1>
+            <p>Over many years we provide the tailored support and resources to keep a family together and stop a child losing the people who love 
+            them. Since we first donated, we have seen great progress and expansion of facilities for hundreds of young, vulnerable girls. This is 
+            about empowerment and opportunity, a wonderful and blessed gift to these children
+            Thank you for your support and donations.</p>
+                <div id="paypal-button-container"></div>
+            </div>
+        </div>
+    <!--Donation end-->
+
+    <!-- footer -->
+    <footer>
+		<div class="foot-container">
+			<div class="foot-row">
+				<div class="footer-col">
+					<h4>Organisation</h4>
+					<ul>
+						<li><a href="{% url 'about' %}">Who we are</a></li>
+						<li><a href="{% url 'work' %}">How we work</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Memories</h4>
+					<ul>
+                        <li><a href="{% url 'video' %}">Video's</a></li>
+						<li><a href="{% url 'gallery' %}">Gallery</a></li>
+						<li><a href="{% url 'stories' %}">Our Happy Story</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Connect with Us</h4>
+					<ul>
+						<li><a href="{% url 'contact' %}">Contact Us</a></li>
+						<li><a href="{% url 'feedback' %}">Feedback</a></li>
+                        <li><a href="{% url 'donation' %}">Donation</a></li>
+						
+					</ul>
+				</div> 
+			</div>
+		</div>
+	</footer>
+</body>
+
+
+
+    <!-- Include the PayPal JavaScript SDK -->
+    <script src="https://www.paypal.com/sdk/js?client-id=AfCIMSzB5tkOlAk2_W7R1gzJZcc89S-IOxwsLE655wG4kCLi2-LCfH_ifYXSMHbLxRC1mK-c36f7QdNP&currency=USD"></script>
+
+    <script>
+        // Render the PayPal button into #paypal-button-container
+        paypal.Buttons({
+
+            // Set up the transaction
+            createOrder: function(data, actions) {
+                return actions.order.create({
+                    purchase_units: [{
+                        amount: {
+                            value: '100'
+                        }
+                    }]
+                });
+            },
+            // Finalize the transaction
+            onApprove: function(data, actions) {
+                return actions.order.capture().then(function(orderData) {
+                    // Successful capture! For demo purposes:
+                    console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+                    var transaction = orderData.purchase_units[0].payments.captures[0];
+                    alert('Transaction '+ transaction.status + ': ' + transaction.id + '\n\nSee console for all available details');
+                });
+            }
+
+
+        }).render('#paypal-button-container');
+    </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+
+</html>

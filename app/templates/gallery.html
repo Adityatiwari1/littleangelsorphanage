@@ -1,0 +1,144 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="css/gallery.css">
+    
+    <link rel="stylesheet" type="text/css" href="css/gallery1.css">
+
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/gallery1foot.css' %}" />
+</head>
+<body>
+    <nav>
+        <div class="main">LITTLE ANGELS ORPHANAGE</div>
+        <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li>
+                <a href="{% url 'about' %}">Who We Are</a>
+                <!-- <ul>
+                    <li><a href="#">Our Work</a></li>
+                    <li><a href="#">Our Beliefs</a></li>
+                     <li><a href="#">Icons</a></li> 
+                </ul> -->
+            </li>
+            <li><a href="{% url 'work' %}">How We Work</a></li>
+            <li>
+                <a href="#">Memories</a>
+                <ul>
+                    <li><a href="{% url 'video' %}">Videos</a></li>
+                    <li><a href="{% url 'gallery' %}">Gallery</a></li>
+                    <li><a href="{% url 'stories' %}">Our Happy Story</a></li>
+                  
+                </ul>
+            </li>
+            <li>
+                <a href="#">Connect with Us</a>
+                <ul>
+                    <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                    <li><a href="{% url 'feedback' %}">Feedback</a></li>
+                    <li><a href="{% url 'donation' %}">Donation</a></li>
+
+                </ul>
+            </li>
+            
+        </ul>
+    </nav>
+    <div class="row">
+
+            <div class="gallery2">
+
+        <div class="contain">
+            <div class="panel active fruit"
+                style="background-image:url('https://images.squarespace-cdn.com/content/v1/5571c73ce4b0c7ac290499f4/1512676852392-10LZDCA7GUD46QN4Q1LZ/NPH1.jpg?format=1000w')">
+                <h3 class="show">Children with no families</h3>
+
+            </div>
+            <div class="panel dessert"
+                style="background-image:url('https://live.staticflickr.com/5457/18083719995_ca92481f5c_b.jpg')">
+                <h3 class="show">Happy Children</h3>
+            </div>
+            <div class="panel savory"
+                style="background-image:url('https://www.tcfusa.org/wp-content/uploads/2018/06/givelight-foundation-is-partnering-with-tcf-to-give-200-orphans-a-brighter-future_04.png')">
+                <h3 class="show">Children full of happiness</h3>
+            </div>
+            <div class="panel review"
+                style="background-image:url('https://peacegospel.org/wp-content/uploads/2019/03/Kampala-lead-photo.jpg')">
+                <h3 class="show">Giving them hope</h3>
+            </div>
+            <div class="panel pizza"
+                style="background-image:url('https://heavenschildren.files.wordpress.com/2008/10/begging-at-the-bus-stand.jpg')">
+                <h3 class="show">Providing them home </h3>
+            </div>
+        </div>
+    </div>
+
+        <div class="column">
+          <img src="https://levlalev.com/wp-content/uploads/2017/05/orphan-girl-crying.jpg">
+          <img src="https://www.heavensfamily.org/wp-content/uploads/2016/05/girls-orphanage-a.jpg">
+          <img src="https://newdaycharity.files.wordpress.com/2009/06/sany0100.jpg">
+          <img src="https://img.ulule.com/display/0fa28e3a5a45f2ab661e7ee3338c54da6eca074a/thumbnail/640x360/presales/8/7/5/13578/photo1.jpg">
+          <img src="https://d2g8igdw686xgo.cloudfront.net/33682690_1543924007170711_r.jpeg">
+          <img src="https://www.homeofhopeindia.org/wp-content/uploads/2017/07/support_orphan.jpg">
+          <img src="https://inspiremykids.com/wp-content/uploads/2011/02/nehalg-1-1200x865.jpg">
+        </div>
+        <div class="column">
+          <img src="https://i.pinimg.com/originals/98/c6/9a/98c69a66353a76217b371490bd085528.jpg">
+          <img src="https://indianorphanage.com/io/wp-content/uploads/2020/05/indian-orphanage-children-9829.jpg">
+          <img src="https://inspiremykids.com/wp-content/uploads/2011/02/nehalg-1-1200x865.jpg">
+          <img src="https://c3.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,w_695,g_auto,q_auto,dpr_2.6,f_auto,h_460/mujxrm1ifavpcui7lzkw">
+          <img src="https://images.squarespace-cdn.com/content/v1/57ee6606b3db2b9bde3b7445/1543788579923-2TFV7M0HQSWWCSCUFK61/Miracle4.jpg?format=1000w">
+          <img src="https://190xog308tca51yblb2p8xei-wpengine.netdna-ssl.com/wp-content/uploads/2020/03/201503Gokul-Stairs-64-Lynn-Dobson.jpg">
+          <img src="https://img.ulule.com/display/0fa28e3a5a45f2ab661e7ee3338c54da6eca074a/thumbnail/640x360/presales/8/7/5/13578/photo1.jpg">
+        </div>
+        <div class="column">
+            <img src="https://i.pinimg.com/originals/86/94/91/869491ea21ad63ac2d9277fadd059de3.jpg">
+          <img src="https://www.hheonline.org/orphanage/sittandy/images/IMG_0059.jpg">
+          <img src="https://uniquehomejalandhar.org/wp-content/uploads/2019/01/unique-home-jalandhar-abandoned-girls-orphanage-help-number.jpg">
+          <img src="https://uniquehomejalandhar.org/wp-content/uploads/2014/05/Unique-home-jalandhar-abandon-girl-home-shelter.jpg">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe1j519Lruzec2B8uSjHy9pzxxeKgpr0Y0Xw&usqp=CAU">
+          <img src="https://i.pinimg.com/originals/ae/f2/60/aef260a6db042503e46a4cf7b856169b.jpg">
+          <img src="https://www.muslimorphanagecommittee.com/img/portfolio/4.jpg">
+        </div>
+      </div>
+
+      <footer>
+		<div class="foot-container">
+			<div class="foot-row">
+				<div class="footer-col">
+					<h4>Organisation</h4>
+					<ul>
+						<li><a href="{% url 'about' %}">Who we are</a></li>
+						<li><a href="{% url 'work' %}">How we work</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Memories</h4>
+					<ul>
+                        <li><a href="{% url 'video' %}">Videos</a></li>
+						<li><a href="{% url 'gallery' %}">Gallery</a></li>
+						<li><a href="{% url 'stories' %}">Our Happy Story</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Connect with Us</h4>
+					<ul>
+						<li><a href="{% url 'contact' %}">Contact Us</a></li>
+						<li><a href="{% url 'feedback' %}">Feedback</a></li>
+                        <li><a href="{% url 'donation' %}">Donation</a></li>
+						
+					</ul>
+				</div> 
+			</div>
+		</div>
+	</footer>
+    <script src="{% static '/js/gallery1 .js' %}" ></script>
+      
+</body>
+</html>
